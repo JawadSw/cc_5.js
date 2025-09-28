@@ -5,3 +5,8 @@ const employees = [
   { id: 4, name: " Alice Adair",      hourlyRate: 30,  hoursWorked: 38  },
   { id: 5, name: "Roy Daniels",  hourlyRate: "17",    hoursWorked: 50  }
 ];
+
+function calculateBasePay(rate, hours) {
+    const baseHours = Math.min(hours, 40)
+    return baseHours * rate;
+}
