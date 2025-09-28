@@ -1,0 +1,7 @@
+const employees = [
+  { id: 1, name: "Jim Bob",   hourlyRate: 22,    hoursWorked: 80 },
+  { id: 2, name: "Vince Reynolds",         hourlyRate: 20, hoursWorked: 35  },
+  { id: 3, name: " Wade Watts", hourlyRate: 28.5,  hoursWorked: 45  },
+  { id: 4, name: " Alice Adair",      hourlyRate: 30,  hoursWorked: 38  },
+  { id: 5, name: "Roy Daniels",  hourlyRate: "17",    hoursWorked: 50  }
+];
