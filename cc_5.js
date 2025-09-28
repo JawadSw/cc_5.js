@@ -19,4 +19,24 @@ function calculateOvertimePay(rate, hours) {
     }
     return 0;
 }
+// calculate Taxes
+function calculateTaxes(grossPay) {
+    return grossPay * 0.85;
+}
 
+function processPayroll(employee) {
+    const rate = number(employee.hourlyRate);
+    const basePay  = calculateBasePay(rate, employee.hoursWorked);
+    const overtime = calculateOvertimePay(rate, employee.hoursWorked);
+    const grossPay = basepay + overtimePay;
+    const netPay = calculateTaxes(grossPay);
+
+return {
+    name: employee.name,
+    basePay: basePay,
+    overtimePay: overtimePay,
+    grossPay: grosspay,
+    netPay: netPay
+};
+
+};
