@@ -35,8 +35,12 @@ return {
     name: employee.name,
     basePay: basePay,
     overtimePay: overtimePay,
-    grossPay: grosspay,
+    grossPay: grossPay,
     netPay: netPay
 };
 
+};
+
+for (let employee of employees) {
+    console.log(processPayroll(employee));
 };
